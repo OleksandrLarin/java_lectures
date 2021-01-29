@@ -1,4 +1,4 @@
-package lecture1.generic.garage;
+package lecture15.generic.garage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ public class Garage<T extends Vehicle> {
 
     public static void main(String[] args) {
         Garage<Car> carGarage = new Garage<>();
-        Car vehicle = carGarage.get(0);
+        Car car = carGarage.get(0);
 
         Garage<Bus> busGarage = new Garage<>();
         Bus bus = busGarage.get(0);

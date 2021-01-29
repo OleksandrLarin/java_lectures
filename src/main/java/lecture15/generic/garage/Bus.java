@@ -1,4 +1,4 @@
-package lecture1.generic.garage;
+package lecture15.generic.garage;
 
 public class Bus extends Vehicle {
     @Override

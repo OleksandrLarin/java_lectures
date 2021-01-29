@@ -1,4 +1,4 @@
-package lecture1.generic;
+package lecture15.generic;
 
 public class Run {
     public static void main(String[] args) {

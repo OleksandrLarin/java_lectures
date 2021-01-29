@@ -1,4 +1,4 @@
-package lecture1.generic.garage;
+package lecture15.generic.garage;
 
 public abstract class Vehicle {
     public String getInfo() {

@@ -1,4 +1,4 @@
-package lecture1.generic;
+package lecture15.generic;
 
 import java.util.ArrayList;
 import java.util.List;
