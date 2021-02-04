@@ -11,45 +11,37 @@ public class Dijkstra {
     private static final Node NODE_END;
 
     static {
-        Node nodeA = new Node("A");
-        NODE_START = nodeA;
-        Node nodeB = new Node("B");
-        Node nodeC = new Node("C");
-        Node nodeD = new Node("D");
-        Node nodeE = new Node("E");
-        Node nodeF = new Node("F");
-        NODE_END = nodeF;
-        Node nodeG = new Node("G");
+        Node node1 = new Node("1");
+        Node node2 = new Node("2");
+        NODE_START = node1;
+        Node node3 = new Node("3");
+        Node node4 = new Node("4");
+        Node node5 = new Node("5");
+        NODE_END = node5;
 
-        nodeA.addDestination(nodeB, 4);
-        nodeA.addDestination(nodeC, 8);
-        nodeA.addDestination(nodeD, 6);
+        node1.addDestination(node2, 10);
+        node1.addDestination(node4, 30);
+        node1.addDestination(node5, 100);
 
-        nodeB.addDestination(nodeG, 4);
+        node2.addDestination(node3, 50);
 
-        nodeC.addDestination(nodeF, 13);
+        node3.addDestination(node5, 10);
 
-        nodeD.addDestination(nodeE, 5);
-
-        nodeE.addDestination(nodeF, 9);
-
-        nodeG.addDestination(nodeF, 4);
-
+        node4.addDestination(node5, 60);
+        node4.addDestination(node3, 20);
         GRAPH = new Graph();
 
-        GRAPH.addNode(nodeA);
-        GRAPH.addNode(nodeB);
-        GRAPH.addNode(nodeC);
-        GRAPH.addNode(nodeD);
-        GRAPH.addNode(nodeE);
-        GRAPH.addNode(nodeF);
-        GRAPH.addNode(nodeG);
+        GRAPH.addNode(node1);
+        GRAPH.addNode(node2);
+        GRAPH.addNode(node3);
+        GRAPH.addNode(node4);
+        GRAPH.addNode(node5);
     }
 
     public static void main(String[] args) {
         calculateShortestPathFromSource(GRAPH, NODE_START);
 
-        System.out.println("Самый короткий путь от точки А в точку F = " + NODE_END.getDistance());
+        System.out.println("Самый короткий путь от точки 1 в точку " + NODE_END.getName() + " = " + NODE_END.getDistance());
     }
 
     public static Graph calculateShortestPathFromSource(Graph graph, Node source) {

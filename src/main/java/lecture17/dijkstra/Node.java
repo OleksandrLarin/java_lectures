@@ -41,4 +41,8 @@ public class Node {
     public Map<Node, Integer> getAdjacentNodes() {
         return adjacentNodes;
     }
+
+    public String getName() {
+        return name;
+    }
 }
