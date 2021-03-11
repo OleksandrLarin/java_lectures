@@ -10,10 +10,11 @@
       "name": "Petr Vasiliev",
       "id": 321
     }
-  },
+  }]
+
   {
     "$rename": {
       "name": "fullName"
     }
   }
-]
+
