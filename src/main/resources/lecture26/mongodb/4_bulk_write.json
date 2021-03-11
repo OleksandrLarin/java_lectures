@@ -1,0 +1,27 @@
+[
+  {
+    "insertOne": {
+      "document": {
+        "fullName": "Joseph"
+      }
+    }
+  },
+  {
+    "deleteOne": {
+      "filter": {
+        "fullName": "Philipp"
+      }
+    }
+  },
+  {
+    "replaceOne": {
+      "filter": {
+        "fullName": "Joseph"
+      },
+      "replacement": {
+        "fullName": "Joseph Peterson"
+      }
+    }
+  }
+]
+

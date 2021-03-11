@@ -1,0 +1,19 @@
+[
+  {
+    "name": {
+      "$regex": /ov$/
+    },
+    "id": 123
+  },
+  {
+    "$set": {
+      "name": "Petr Vasiliev",
+      "id": 321
+    }
+  },
+  {
+    "$rename": {
+      "name": "fullName"
+    }
+  }
+]
